@@ -1,8 +1,8 @@
 export const Tabs = ({ tabs, activeTab }) => {
   return (
-    <div className="block" data-cy="TabContent">
+    <div className="block">
       {tabs.map(tab => (
-        <div key={tab.id} data-cy="TabContent">
+        <div key={tab.id}>
           {activeTab === tab.id && (
             <div className="content" data-cy="TabContent">
               {tab.content}
